@@ -1043,7 +1043,7 @@
     </div>
 
     <script>
-        // Shopping Cart
+        
         let cart = [];
 
         function updateCartUI() {
@@ -1114,15 +1114,15 @@
             message += `\n*Total: $${total}*\n\n`;
             message += 'Please confirm your order and provide shipping details.';
 
-            // Replace with your WhatsApp number (include country code without + or -)
-            const phoneNumber = '+234 8162921153'; // UPDATE THIS WITH YOUR WHATSAPP NUMBER
+            
+            const phoneNumber = '+234 8162921153'; 
             const encodedMessage = encodeURIComponent(message);
             const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
             window.open(whatsappURL, '_blank');
         }
 
-        // Image Zoom
+        
         function zoomImage(imageSrc) {
             const modal = document.getElementById('imageZoomModal');
             const zoomedImage = document.getElementById('zoomedImage');
@@ -1134,7 +1134,7 @@
             document.getElementById('imageZoomModal').style.display = 'none';
         }
 
-        // Contact Form Email
+        
         async function sendEmail(event) {
             event.preventDefault();
             
@@ -1150,15 +1150,14 @@
                 message: formData.get('message')
             };
 
-            // Show loading state
+            
             const submitBtn = form.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
             submitBtn.textContent = 'Sending...';
             submitBtn.disabled = true;
 
             try {
-                // Using EmailJS or similar service - You need to set this up
-                // For now, this will create a mailto link as fallback
+                
                 
                 const emailBody = `
 Name: ${data.firstName} ${data.lastName}
@@ -1169,7 +1168,7 @@ Message:
 ${data.message}
                 `;
 
-                // Replace 'your-email@example.com' with your actual email
+               
                 const mailtoLink = `mailto:your-email@example.com?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(emailBody)}`;
                 
                 window.location.href = mailtoLink;
@@ -1194,7 +1193,7 @@ ${data.message}
             }
         }
 
-        // Page Navigation
+        
         function showPage(pageId) {
             const pages = document.querySelectorAll('.page');
             pages.forEach(page => page.classList.remove('active'));
@@ -1202,7 +1201,7 @@ ${data.message}
             window.scrollTo(0, 0);
         }
 
-        // Timestamp
+      
         function updateTimestamp() {
             const now = new Date();
             const options = { 
@@ -1219,8 +1218,7 @@ ${data.message}
         updateTimestamp();
         setInterval(updateTimestamp, 60000);
 
-        // QR Code - automatically points to wherever this page is actually hosted,
-        // so no changes are needed once the final domain goes live.
+       
         function generateQRCode() {
             const qrContainer = document.getElementById('qrcode');
             if (qrContainer && typeof QRCode !== 'undefined') {
