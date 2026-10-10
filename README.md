@@ -24,7 +24,7 @@ It's a static site: plain HTML, CSS and JavaScript, with no build step and no ba
 - Prices are in naira (₦). A product with `price: null` shows **"Price on request"**.
 - Clothing has an S–XXL size picker. Adding an item without picking a size shakes the picker and asks for one.
 - Sold-out items get a **CONFISCATED** stamp and a disabled button.
-- The cart lets visitors change quantities, and adding the same item and size again bumps the quantity.
+- The cart shows a thumbnail of each item (tap to zoom) and lets visitors change quantities. Adding the same item and size again bumps the quantity.
 - The cart is saved in the browser (`localStorage`), so it follows the visitor between pages and survives a refresh.
 - **Checkout via WhatsApp** opens a chat pre-filled with every item, its size, quantity and price, plus the total.
 - Clicking any product, lookbook or gallery image opens a full-screen zoom. Esc closes it.
@@ -32,6 +32,7 @@ It's a static site: plain HTML, CSS and JavaScript, with no build step and no ba
 **Look and feel**
 - Psych-ward "case file" theme: black, bone, blood red and gold; Anton, Space Mono and Permanent Marker fonts.
 - Film grain, scanlines, glitching titles, scrolling warning tapes, nav text that scrambles on hover, and a random page "flicker" every 5–11 seconds.
+- The home nav links are outlined tags with nudging red arrows and a "tap a file to enter" hint, so they clearly read as tappable on phones too.
 - The home mascot's pupil tracks the mouse. On phones it darts around on its own, and it turns red and dilates when you hover the nav.
 - Responsive down to phone width.
 - Visitors with **reduced motion** turned on in their device settings get the site with all animation switched off.
@@ -79,7 +80,7 @@ At the very top of `js/saiko.js`:
 
 ```js
 const WHATSAPP_NUMBER = '2348162921153'; // digits only: country code + number, no "+" or spaces
-const CONTACT_EMAIL = 'your-email@example.com';
+const CONTACT_EMAIL = 'eyxssaiko@gmail.com';
 ```
 
 The **Message on WhatsApp** button in `contact.html` has the number written into its link too, so change it there as well.
@@ -98,7 +99,7 @@ Edit the text inside `.tape-track` on each page. Write the phrase out twice, bec
 ## Future edits / to do
 
 **Needs fixing before launch**
-- [ ] **Contact email:** `CONTACT_EMAIL` is still a placeholder, so the contact form sends nowhere real.
+- [x] **Contact email:** set to `eyxssaiko@gmail.com`.
 - [ ] **Newsletter:** the Subscribe button does nothing yet. Connect it to a mailing service (e.g. Mailchimp, ConvertKit or Formspree), or remove it.
 - [ ] **Footer links:** "Shipping & Returns" and "Privacy Policy" link to `#`. Write those pages or remove the links.
 - [ ] **Leather jacket:** the BLANK SAIKO SKULL LEATHER JACKET has no naira price yet (it shows "Price on request").

@@ -1,7 +1,7 @@
 // SAIKO — shared script for every page: products, cart, modals, and the twitchy effects.
 
 const WHATSAPP_NUMBER = '2348162921153'; // wa.me needs digits only: country code + number
-const CONTACT_EMAIL = 'boy-add-your-email@gmail.com'; // TODO: replace with the real inbox
+const CONTACT_EMAIL = 'eyxssaiko@gmail.com'; // contact form messages go here
 
 // ---------- products ----------
 // Single source of truth for the store: the card, the cart and the WhatsApp order all read from here.
