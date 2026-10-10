@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery &amp; Story — SAIKO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/saiko.css">
+</head>
+<body>
+    <header class="site-head">
+        <a class="site-logo" href="index.html" aria-label="SAIKO home"><img src="img/FONT 1.jpeg" alt=""></a>
+        <nav class="site-nav">
+            <a href="store.html"><i>01</i><b data-label="STORE">STORE</b></a>
+            <a href="lookbook.html"><i>02</i><b data-label="LOOKBOOK">LOOKBOOK</b></a>
+            <a href="gallery.html" aria-current="page"><i>03</i><b data-label="GALLERY &amp; STORY">GALLERY &amp; STORY</b></a>
+            <a href="coming-soon.html"><i>04</i><b data-label="COMING SOON">COMING SOON</b></a>
+            <a href="contact.html"><i>05</i><b data-label="CONTACT">CONTACT</b></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="page-file">File 03 · The art behind SAIKO</p>
+            <h1 class="page-title glitch" data-text="Gallery &amp; Story">Gallery &amp; Story</h1>
+            <p class="page-sub">Welcome to our visual journey. Each piece tells a story of creativity, passion, and the misunderstood spirit that drives us forward.</p>
+        </section>
+
+        <div class="tape reverse" aria-hidden="true"><div class="tape-track">EVIDENCE WALL ✕ DO NOT TOUCH THE EXHIBITS ✕ EVIDENCE WALL ✕ DO NOT TOUCH THE EXHIBITS ✕ </div></div>
+
+        <section class="section">
+            <div class="wall">
+                <button class="polaroid" onclick="zoomImage('img/saiko1.jpeg')">
+                    <img src="img/saiko1.jpeg" alt="Gallery 1" loading="lazy">
+                    <span class="polaroid-ex">EXHIBIT 01</span>
+                    <span class="polaroid-cap">Original Vision</span>
+                </button>
+                <button class="polaroid" onclick="zoomImage('img/saikoHood2.jpeg')">
+                    <img src="img/saikoHood2.jpeg" alt="Gallery 2" loading="lazy">
+                    <span class="polaroid-ex">EXHIBIT 02</span>
+                    <span class="polaroid-cap">Street Culture</span>
+                </button>
+                <button class="polaroid" onclick="zoomImage('img/saiko12.jpeg')">
+                    <img src="img/saiko12.jpeg" alt="Gallery 3" loading="lazy">
+                    <span class="polaroid-ex">EXHIBIT 03</span>
+                    <span class="polaroid-cap">Original Vision</span>
+                </button>
+                <button class="polaroid" onclick="zoomImage('img/saiko3.jpeg')">
+                    <img src="img/saiko3.jpeg" alt="Gallery 4" loading="lazy">
+                    <span class="polaroid-ex">EXHIBIT 04</span>
+                    <span class="polaroid-cap">Original Vision</span>
+                </button>
+                <button class="polaroid" onclick="zoomImage('img/saiko9.jpeg')">
+                    <img src="img/saiko9.jpeg" alt="Gallery 5" loading="lazy">
+                    <span class="polaroid-ex">EXHIBIT 05</span>
+                    <span class="polaroid-cap">Original Vision</span>
+                </button>
+                <button class="polaroid" onclick="zoomImage('img/saiko15.jpeg')">
+                    <img src="img/saiko15.jpeg" alt="Gallery 6" loading="lazy">
+                    <span class="polaroid-ex">EXHIBIT 06</span>
+                    <span class="polaroid-cap">Original Vision</span>
+                </button>
+            </div>
+
+            <article class="statement">
+                <div class="statement-head">
+                    <span>Patient statement · File 03</span>
+                    <span>Recorded: <span class="js-time"></span></span>
+                </div>
+                <h2>Our Story</h2>
+                <p>SAIKO was born from <span class="redact" tabindex="0">the streets</span>, created for those who see the world differently. Every design, every piece carries the essence of being <span class="redact" tabindex="0">misunderstood</span> yet confident in one's vision.</p>
+                <p>Through art and fashion, we create a movement for those who <span class="redact" tabindex="0">dare to be different</span>.</p>
+                <span class="statement-sign">— EYXS</span>
+                <span class="stamp">VERIFIED</span>
+            </article>
+        </section>
+    </main>
+
+    <section class="signal">
+        <div>
+            <h2>Stay <em>updated</em></h2>
+            <p>Subscribe to receive updates on new collections and exclusive offers.</p>
+        </div>
+        <div>
+            <div class="signal-form">
+                <input type="email" placeholder="Enter your email" aria-label="Email address">
+                <button>Subscribe</button>
+            </div>
+            <p class="disclaimer">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+    </section>
+
+    <footer class="site-foot">
+        <nav>
+            <a href="contact.html">Contact</a>
+            <a href="#">Shipping &amp; Returns</a>
+            <a href="#">Privacy Policy</a>
+        </nav>
+        <span>Orders handled on WhatsApp</span>
+        <span>© 2024 EYXS OF THE gods. All rights reserved.</span>
+    </footer>
+
+    <script src="js/saiko.js"></script>
+</body>
+</html>

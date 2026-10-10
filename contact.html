@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — SAIKO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/saiko.css">
+</head>
+<body>
+    <header class="site-head">
+        <a class="site-logo" href="index.html" aria-label="SAIKO home"><img src="img/FONT 1.jpeg" alt=""></a>
+        <nav class="site-nav">
+            <a href="store.html"><i>01</i><b data-label="STORE">STORE</b></a>
+            <a href="lookbook.html"><i>02</i><b data-label="LOOKBOOK">LOOKBOOK</b></a>
+            <a href="gallery.html"><i>03</i><b data-label="GALLERY &amp; STORY">GALLERY &amp; STORY</b></a>
+            <a href="coming-soon.html"><i>04</i><b data-label="COMING SOON">COMING SOON</b></a>
+            <a href="contact.html" aria-current="page"><i>05</i><b data-label="CONTACT">CONTACT</b></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="page-file">File 05 · Intake</p>
+            <h1 class="page-title glitch" data-text="Contact us">Contact us</h1>
+            <span class="page-scrawl">we're listening. always.</span>
+        </section>
+
+        <div class="tape bone" aria-hidden="true"><div class="tape-track">TALK TO US ✕ ALL CALLS ARE RECORDED ✕ TALK TO US ✕ ALL CALLS ARE RECORDED ✕ </div></div>
+
+        <section class="section intake">
+            <form class="intake-form" id="contactForm" onsubmit="sendEmail(event)">
+                <h2>Intake form</h2>
+                <p class="form-sub">Fill in every field · answers are confidential</p>
+                <div class="form-message" id="formMessage" role="status"></div>
+                <div class="form-row">
+                    <label class="field"><span>First name</span><input type="text" name="firstName" required></label>
+                    <label class="field"><span>Last name</span><input type="text" name="lastName" required></label>
+                </div>
+                <label class="field"><span>Email</span><input type="email" name="email" required></label>
+                <label class="field"><span>Subject</span><input type="text" name="subject" required></label>
+                <label class="field"><span>Your message</span><textarea name="message" required></textarea></label>
+                <button type="submit" class="btn">Send message</button>
+            </form>
+
+            <aside class="hotline">
+                <h2>Direct <em>line</em></h2>
+                <p>Fastest way to reach us — orders, sizing, custom pieces, or just to say the art got to you.</p>
+                <a class="btn btn-whatsapp" href="https://wa.me/2348162921153" target="_blank" rel="noopener">Message on WhatsApp</a>
+                <span class="hotline-scrawl">made for the misunderstood &amp; unafraid</span>
+            </aside>
+        </section>
+    </main>
+
+    <section class="signal">
+        <div>
+            <h2>Stay <em>updated</em></h2>
+            <p>Subscribe to receive updates on new collections and exclusive offers.</p>
+        </div>
+        <div>
+            <div class="signal-form">
+                <input type="email" placeholder="Enter your email" aria-label="Email address">
+                <button>Subscribe</button>
+            </div>
+            <p class="disclaimer">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+    </section>
+
+    <footer class="site-foot">
+        <nav>
+            <a href="contact.html">Contact</a>
+            <a href="#">Shipping &amp; Returns</a>
+            <a href="#">Privacy Policy</a>
+        </nav>
+        <span>Orders handled on WhatsApp</span>
+        <span>© 2024 EYXS OF THE gods. All rights reserved.</span>
+    </footer>
+
+    <script src="js/saiko.js"></script>
+</body>
+</html>
